@@ -1,0 +1,14 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% if page.endpoint == 'index' %}
+    <title>Drew Silverstein</title>
+    {% else %}
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    {% endif %}
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="shortcut icon" href="{{ site.imgurl }}/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ site.imgurl }}/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css">
+</head>
