@@ -1,0 +1,18 @@
+# Site settings
+title: Drew Silverstein
+email: drew.silverstein@ampermusic.com
+description: "Drew Silverstein is a composer, entrepreneur, and founder of Amper Music."
+baseurl: ""
+imgurl: "/assets/img"
+jsurl: "/assets/js"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+sass:
+  sass_dir: assets/css
+  style: :compressed
+
+gems:
+  - jekyll-sitemap

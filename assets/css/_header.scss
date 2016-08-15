@@ -1,0 +1,84 @@
+header {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    height: $header-height;
+    line-height: $header-height;
+
+    .navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+        transition: background-color 0.4s ease-in-out;
+        -webkit-transition: background-color 0.4s ease-in-out;
+        -moz-transition: background-color 0.4s ease-in-out;
+
+        .navbar-toggle {
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            margin: 27px 0;
+            background-color: #e1e1e1;
+
+            &:focus {
+                outline: none
+            }
+        }
+
+        .collapsed {
+            background-color: transparent;
+        }
+    }
+
+    #logo {
+        opacity: 0;
+        transition: opacity 0.6s ease-in-out;
+        -webkit-transition: opacity 0.6s ease-in-out;
+        -moz-transition: opacity 0.6s ease-in-out;
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .container > .navbar-header {
+        margin: 0;
+    }
+
+    ul {
+        text-align: right;
+    }
+
+    .nav > li {
+        display: inline-block;
+
+         a {
+            padding: 0 15px;
+            color: #000;
+
+            @media(max-width: $screen-xs) {
+                padding: 0 8px;
+            }
+        }
+    }
+
+    .nav>li>a:hover,
+    .nav>li>a:focus {
+        background-color: transparent;
+        opacity: 0.8;
+        outline: none;
+    }
+}
+
+#shrink {
+    height: $header-height-sm;
+    line-height: $header-height-sm;
+
+    .navbar-default {
+        background-color: white;
+        opacity: 0.9;
+        border-color: #e1e1e1;
+    }
+
+    .navbar-toggle {
+        margin: 8px 0;
+    }
+}

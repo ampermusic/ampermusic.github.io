@@ -1,0 +1,15 @@
+footer {
+    background-color: $footer-color-bg;
+    line-height: $footer-height;
+    bottom: 0;
+    width: 100%;
+
+    p {
+        text-align: right;
+        color: $footer-color-fg;
+        margin: 0;
+        @media(max-width: $screen-sm) {
+            font-size: 12px;
+        }
+    }   
+}
