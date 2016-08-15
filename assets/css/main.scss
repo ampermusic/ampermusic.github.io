@@ -6,6 +6,7 @@
 @import "contrib/normalize";
 
 // Common and Shared
-
-
-// Single Pages/Templates
+@import "variables";
+@import "base";
+@import "header";
+@import "footer";
